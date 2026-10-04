@@ -1,0 +1,7 @@
+imc: *I,imc.tool.cov.version.diff: "There is a difference between the IMC tool version 25.03 and the coverage version 24.09-s008"
+IMC(64): 25.03-s001: (c) Copyright 1995-2025 Cadence Design Systems Inc - Simulator version: 24.09-s008 - Coverage engine version: 24.09-s008
+imc: *I,RUNLD: Successfully loaded run ./cov_work/scope/test.
+Starting batch mode
+imc> report -detail -html -out cov_html_report
+imc: *W,REPDEP: This is a legacy report and no future enhancement is planned for this report. It is recommended that you use the 'report_metrics' command and generate a dynamic report.
+Output of report -html command sent to directory: cov_html_report

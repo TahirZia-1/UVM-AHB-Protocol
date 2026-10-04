@@ -1,0 +1,11 @@
+xrun -sv -uvm -timescale 1ns/1ps -access +rwc -coverage all -covoverwrite -assert +UVM_TESTNAME=ahb_regression_test +UVM_VERBOSITY=UVM_LOW design.sv ahb_assertions.sv testbench.sv
+
+for logs
+xrun -sv -uvm -timescale 1ns/1ps -access +rwc -coverage all -covoverwrite -assert \
+     +UVM_TESTNAME=ahb_regression_test +UVM_VERBOSITY=UVM_MEDIUM \
+     design.sv ahb_assertions.sv testbench.sv | tee regression_run.log
+
+Text report
+imc -load ./cov_work/scope/test -execcmd "report -detail -out coverage_summary.rpt"
+
+less coverage_summary.rpt

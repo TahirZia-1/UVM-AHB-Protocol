@@ -1,0 +1,370 @@
+<HTML>
+<HEAD>
+<link type="text/css" rel="stylesheet" href="../../imc.css"></link>
+<script type="text/javascript" src="../../sortable.js"></script>
+<TITLE>IMC Report: cov_html_report</TITLE></HEAD>
+<BODY>
+<A NAME="_topcov"></A>
+<P class="summary_title">Coverage   Summary Report, Instance-Based</P>
+
+<P class="fs"><A STYLE="float: left" class="namet" HREF="../../index.html">Top Level Summary</A><A STYLE="float: right" class="namet" HREF="../../legend.html">Legend and Help</A></P>
+<BR>
+<TABLE class="detail_header"><TR class="detail"><TD>
+
+<B>Instance name: </B><A HREF="../dir_1/summ_0_t1.html" class="namet">top_tb</A>.dut<BR>
+
+<B>Type name: </B>ahb_lite_peripheral<BR>
+
+<B>File name: </B><A HREF="/mnt/esic_home/25ins-01005/Desktop/Tahir_005/SV_Logic_Silicon/UVM/AHB_UVM/ahb_lite_peripheral.sv" TARGET="_blank">/mnt/esic_home/25ins-01005/Desktop/Tahir_005/SV_Logic_Silicon/UVM/AHB_UVM/ahb_lite_peripheral.sv</A><BR>
+
+</TD></TR></TABLE>
+
+<BR>
+<P class="subtitle">Coverage Summary Report, Instance-Based</P>
+<TABLE class="sortable sml summary_table" id="totalTable">
+
+
+<TR><TH class="wht">Overall</TH>
+<TH class="wht">Overall Covered</TH>
+<TH class="wht">Block</TH>
+<TH class="wht">Expression</TH>
+<TH class="wht">Toggle</TH>
+<TH class="wht">FSM&nbsp;State</TH>
+<TH class="wht">FSM&nbsp;Transition</TH>
+<TH class="wht">Assertion</TH>
+<TH class="wht">CoverGroup</TH>
+<TH class="wht">CoverGroup Covered</TH>
+<TH class="wht">name</TH>
+
+</TR>
+
+<TR><TD class="range75to79"><A HREF="">78.11%</A></TD>
+<TD class="range65to69"><A HREF="">65.34%&nbsp;(328/502)</A></TD>
+<TD class="range85to89"><A HREF="#_Blockcov">89.39%&nbsp;(118/132)</A></TD>
+<TD class="range90to94"><A HREF="#_Expressioncov">92.50%&nbsp;(37/40)</A></TD>
+<TD class="range50to54"><A HREF="#_Togglecov">52.42%&nbsp;(173/330)</A></TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="namecell">dut</TD>
+
+</TR>
+
+
+</TABLE>
+<A NAME="_Blockcov"></A>
+<P class="detail_title">     Uncovered Block Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>top_tb.dut<BR>
+<B>Type name: </B>ahb_lite_peripheral<BR>
+<B>File name: </B><A HREF="/mnt/esic_home/25ins-01005/Desktop/Tahir_005/SV_Logic_Silicon/UVM/AHB_UVM/ahb_lite_peripheral.sv" TARGET="_blank">/mnt/esic_home/25ins-01005/Desktop/Tahir_005/SV_Logic_Silicon/UVM/AHB_UVM/ahb_lite_peripheral.sv</A><BR><B>Number of uncovered blocks: </B>14 of 132<BR>
+<B>Number of unreachable blocks: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Count  Block Line  Kind                 Origin Source Code                    
+------------------------------------------------------------------------------
+0      20    128   implicit else        128    if ((a+i) &lt;= 32'h0000_07FF) 
+0      26    137   a case item of       135    A_STATUS:     return {27'h0,IRQ,fifo_full,fifo_empty,timer_running,ctrl[0]}; 
+0      27    137   code block           137    A_STATUS:     return {27'h0,IRQ,fifo_full,fifo_empty,timer_running,ctrl[0]}; 
+0      34    141   a case item of       135    A_TIMER_CTRL: return {29'h0,timer_ctrl}; 
+0      35    141   code block           141    A_TIMER_CTRL: return {29'h0,timer_ctrl}; 
+0      46    147   a case item of       135    default:      return '0;       
+0      47    147   code block           147    default:      return '0;       
+0      53    161   true part of         160    return 1'b1;                   
+0      54    161   code block           161    return 1'b1;                   
+0      61    167   true part of         166    return 1'b1;                   
+0      62    167   code block           167    return 1'b1;                   
+0      65    170   true part of         169    return 1'b1;                   
+0      66    170   code block           170    return 1'b1;                   
+0      99    236   true part of         235    int_status[0] &lt;= 1'b1;      
+
+</PRE>
+<A NAME="_Expressioncov"></A>
+<P class="detail_title">     Uncovered Expression Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>top_tb.dut<BR>
+<B>Type name: </B>ahb_lite_peripheral<BR>
+<B>File name: </B><A HREF="/mnt/esic_home/25ins-01005/Desktop/Tahir_005/SV_Logic_Silicon/UVM/AHB_UVM/ahb_lite_peripheral.sv" TARGET="_blank">/mnt/esic_home/25ins-01005/Desktop/Tahir_005/SV_Logic_Silicon/UVM/AHB_UVM/ahb_lite_peripheral.sv</A><BR><B>Number of uncovered expressions: </B>3 of 40<BR>
+<B>Number of unreachable expressions: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+index  | grade         | line   | expression                                         
+-------------------------------------------------------------------------------------
+2.1    | 66.67% (2/3)  | 169    | (a == A_FIFO_DATA) && (! ctrl[2])                  
+9.1    | 75.00% (3/4)  | 244    | (active_q && (wait_count == 0)) && HREADY          
+11.1   | 80.00% (4/5)  | 293    | valid_addr_phase && ((! active_q) || ((wait_count == 0) && HREADY)) 
+
+<B>index: </B><B>2.1</B><B> grade: </B><B>66.67% (2/3)</B><B> line: </B><B>169</B><B> source: </B><B>if ((a == A_FIFO_DATA) && !ctrl[2])</B>
+
+(a == A_FIFO_DATA) && (! ctrl[2])<BR>
+<B><</B>-------<B>1</B>--------<B>></B>       <B><</B>--<B>2</B>--<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; 
+-----------------------------------
+2.1.1     | 0     | 1    | 1   0   
+
+<B>index: </B><B>9.1</B><B> grade: </B><B>75.00% (3/4)</B><B> line: </B><B>244</B><B> source: </B><B>if (active_q && (wait_count == 0) && HREADY) begin</B>
+
+(active_q && (wait_count == 0)) && HREADY<BR>
+ <B><</B>--<B>1</B>---<B>></B>     <B><</B>---<B>2</B>----<B>></B>           <B><</B>-<B>4</B>--<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;4&gt; 
+---------------------------------------
+9.1.2     | 0     | 0    | -   -   0   
+
+<B>index: </B><B>11.1</B><B> grade: </B><B>80.00% (4/5)</B><B> line: </B><B>293</B><B> source: </B><B>if (valid_addr_phase && (!active_q || ((wait_count == 0) && HREADY))) begin</B>
+
+valid_addr_phase && ((! active_q) || ((wait_count == 0) && HREADY))<BR>
+<B><</B>------<B>1</B>-------<B>></B>        <B><</B>--<B>2</B>---<B>></B>       <B><</B>---<B>3</B>----<B>></B>          <B><</B>-<B>5</B>--<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; &lt;5&gt; 
+-------------------------------------------
+11.1.3    | 0     | 0    | -   1   -   0   
+
+
+</PRE>
+<A NAME="_Togglecov"></A>
+<P class="detail_title">     Uncovered Toggle Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>top_tb.dut<BR>
+<B>Type name: </B>ahb_lite_peripheral<BR>
+<B>File name: </B><A HREF="/mnt/esic_home/25ins-01005/Desktop/Tahir_005/SV_Logic_Silicon/UVM/AHB_UVM/ahb_lite_peripheral.sv" TARGET="_blank">/mnt/esic_home/25ins-01005/Desktop/Tahir_005/SV_Logic_Silicon/UVM/AHB_UVM/ahb_lite_peripheral.sv</A><BR><B>Number of uncovered signal bits: </B>157 of 330<BR>
+<B>Number of unreachable signal bits: </B>0<BR>
+<B>Number of signal bits partially toggled(rise): </B>32 of 330<BR>
+<B>Number of signal bits partially toggled(fall): </B>0 of 330<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Hit(Full)  Hit(Rise)  Hit(Fall)  Signal                    
+-----------------------------------------------------------
+0          1          0          HRESETn                   
+0          0          0          HADDR[31]                 
+0          0          0          HADDR[30]                 
+0          0          0          HADDR[29]                 
+0          0          0          HADDR[28]                 
+0          0          0          HADDR[27]                 
+0          0          0          HADDR[26]                 
+0          0          0          HADDR[25]                 
+0          0          0          HADDR[24]                 
+0          0          0          HADDR[23]                 
+0          0          0          HADDR[22]                 
+0          0          0          HADDR[21]                 
+0          0          0          HADDR[20]                 
+0          0          0          HADDR[19]                 
+0          0          0          HADDR[18]                 
+0          0          0          HADDR[17]                 
+0          0          0          HADDR[16]                 
+0          0          0          HADDR[15]                 
+0          0          0          HADDR[14]                 
+0          0          0          HSIZE[2]                  
+0          0          0          HBURST[2]                 
+0          0          0          HREADY                    
+0          0          0          ctrl[3]                   
+0          1          0          ctrl[1]                   
+0          1          0          int_en[2]                 
+0          1          0          int_en[1]                 
+0          1          0          int_en[0]                 
+0          0          0          int_status[0]             
+0          0          0          timer_load[31]            
+0          0          0          timer_load[30]            
+0          0          0          timer_load[29]            
+0          0          0          timer_load[28]            
+0          0          0          timer_load[27]            
+0          0          0          timer_load[26]            
+0          0          0          timer_load[25]            
+0          0          0          timer_load[24]            
+0          0          0          timer_load[23]            
+0          0          0          timer_load[22]            
+0          0          0          timer_load[21]            
+0          0          0          timer_load[20]            
+0          0          0          timer_load[19]            
+0          0          0          timer_load[18]            
+0          0          0          timer_load[17]            
+0          0          0          timer_load[16]            
+0          0          0          timer_load[15]            
+0          0          0          timer_load[14]            
+0          0          0          timer_load[13]            
+0          0          0          timer_load[12]            
+0          0          0          timer_load[11]            
+0          0          0          timer_load[10]            
+0          0          0          timer_load[9]             
+0          0          0          timer_load[8]             
+0          0          0          timer_load[7]             
+0          0          0          timer_load[6]             
+0          1          0          timer_load[3]             
+0          0          0          timer_load[2]             
+0          0          0          timer_load[1]             
+0          0          0          timer_load[0]             
+0          0          0          timer_ctrl[2]             
+0          1          0          scratch[31]               
+0          1          0          scratch[30]               
+0          0          0          scratch[29]               
+0          0          0          scratch[28]               
+0          1          0          scratch[27]               
+0          0          0          scratch[26]               
+0          1          0          scratch[25]               
+0          0          0          scratch[24]               
+0          1          0          scratch[23]               
+0          1          0          scratch[22]               
+0          1          0          scratch[21]               
+0          1          0          scratch[20]               
+0          1          0          scratch[19]               
+0          1          0          scratch[18]               
+0          1          0          scratch[17]               
+0          0          0          scratch[16]               
+0          1          0          scratch[15]               
+0          0          0          scratch[14]               
+0          1          0          scratch[13]               
+0          1          0          scratch[12]               
+0          1          0          scratch[11]               
+0          0          0          scratch[10]               
+0          1          0          scratch[9]                
+0          0          0          scratch[8]                
+0          1          0          scratch[7]                
+0          0          0          scratch[6]                
+0          1          0          scratch[5]                
+0          1          0          scratch[4]                
+0          1          0          scratch[3]                
+0          1          0          scratch[2]                
+0          1          0          scratch[1]                
+0          0          0          scratch[0]                
+0          0          0          timer_value[31]           
+0          0          0          timer_value[30]           
+0          0          0          timer_value[29]           
+0          0          0          timer_value[28]           
+0          0          0          timer_value[27]           
+0          0          0          timer_value[26]           
+0          0          0          timer_value[25]           
+0          0          0          timer_value[24]           
+0          0          0          timer_value[23]           
+0          0          0          timer_value[22]           
+0          0          0          timer_value[21]           
+0          0          0          timer_value[20]           
+0          0          0          timer_value[19]           
+0          0          0          timer_value[18]           
+0          0          0          timer_value[17]           
+0          0          0          timer_value[16]           
+0          0          0          timer_value[15]           
+0          0          0          timer_value[14]           
+0          0          0          timer_value[13]           
+0          0          0          timer_value[12]           
+0          0          0          timer_value[11]           
+0          0          0          timer_value[10]           
+0          0          0          timer_value[9]            
+0          0          0          timer_value[8]            
+0          0          0          timer_value[7]            
+0          0          0          timer_value[6]            
+0          0          0          timer_expiry              
+0          0          0          fifo_rdata[27]            
+0          1          0          fifo_rdata[26]            
+0          1          0          fifo_rdata[25]            
+0          0          0          fifo_rdata[19]            
+0          1          0          fifo_rdata[18]            
+0          0          0          fifo_rdata[17]            
+0          1          0          fifo_rdata[16]            
+0          0          0          fifo_rdata[15]            
+0          0          0          fifo_rdata[14]            
+0          0          0          fifo_rdata[13]            
+0          0          0          fifo_rdata[12]            
+0          0          0          fifo_rdata[11]            
+0          0          0          fifo_rdata[10]            
+0          0          0          fifo_rdata[9]             
+0          0          0          fifo_rdata[8]             
+0          0          0          fifo_rdata[7]             
+0          0          0          fifo_rdata[6]             
+0          0          0          fifo_rdata[5]             
+0          0          0          fifo_rdata[4]             
+0          0          0          addr_q[31]                
+0          0          0          addr_q[30]                
+0          0          0          addr_q[29]                
+0          0          0          addr_q[28]                
+0          0          0          addr_q[27]                
+0          0          0          addr_q[26]                
+0          0          0          addr_q[25]                
+0          0          0          addr_q[24]                
+0          0          0          addr_q[23]                
+0          0          0          addr_q[22]                
+0          0          0          addr_q[21]                
+0          0          0          addr_q[20]                
+0          0          0          addr_q[19]                
+0          0          0          addr_q[18]                
+0          0          0          addr_q[17]                
+0          0          0          addr_q[16]                
+0          0          0          addr_q[15]                
+0          0          0          addr_q[14]                
+0          0          0          size_q[2]                 
+0          0          0          burst_q[2]                
+
+</PRE>
+<A NAME="_Fsmcov"></A>
+<P class="detail_title">     Uncovered Fsm Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>top_tb.dut<BR>
+<B>Type name: </B>ahb_lite_peripheral<BR>
+<B>File name: </B><A HREF="/mnt/esic_home/25ins-01005/Desktop/Tahir_005/SV_Logic_Silicon/UVM/AHB_UVM/ahb_lite_peripheral.sv" TARGET="_blank">/mnt/esic_home/25ins-01005/Desktop/Tahir_005/SV_Logic_Silicon/UVM/AHB_UVM/ahb_lite_peripheral.sv</A><BR>
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+
+0 items found
+
+</PRE>
+<A NAME="_Assertioncov"></A>
+<P class="detail_title">     Uncovered Assertion Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>top_tb.dut<BR>
+<B>Type name: </B>ahb_lite_peripheral<BR>
+<B>File name: </B><A HREF="/mnt/esic_home/25ins-01005/Desktop/Tahir_005/SV_Logic_Silicon/UVM/AHB_UVM/ahb_lite_peripheral.sv" TARGET="_blank">/mnt/esic_home/25ins-01005/Desktop/Tahir_005/SV_Logic_Silicon/UVM/AHB_UVM/ahb_lite_peripheral.sv</A><BR><B>Number of uncovered assertions: </B>0 of 0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Finished Failed Assertion                      Line  Source Code                    
+------------------------------------------------------------------------------------
+
+0 items found
+
+</PRE>
+<A NAME="_CoverGroupcov"></A>
+<P class="detail_title">     Covered+Uncovered+Excluded+UNR CoverGroup Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>top_tb.dut<BR>
+<B>Type name: </B>ahb_lite_peripheral<BR>
+<B>File name: </B><A HREF="/mnt/esic_home/25ins-01005/Desktop/Tahir_005/SV_Logic_Silicon/UVM/AHB_UVM/ahb_lite_peripheral.sv" TARGET="_blank">/mnt/esic_home/25ins-01005/Desktop/Tahir_005/SV_Logic_Silicon/UVM/AHB_UVM/ahb_lite_peripheral.sv</A><BR><B>Number of covered cover bins: </B>0 of 0<BR>
+<B>Number of uncovered cover bins: </B>0 of 0<BR>
+<B>Number of excluded cover bins: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+
+0 items found
+
+</PRE>
